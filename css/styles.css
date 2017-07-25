@@ -1,0 +1,118 @@
+body {
+    font-size: 16px;
+    color: #000;
+    background-color: #e5e5e5;
+    font-family: 'Oswald', sans-serif;
+}
+
+.navbar-brand h1 {
+    font-family: 'Lobster', cursive;
+    color: #676767;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #222;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: .75;
+    cursor: pointer;
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus{
+    text-decoration: none;
+}
+
+.navbar .navbar-search {
+    margin-top: 10px;
+}
+
+.navbar .navbar-search .search-query{
+    background: #676767;
+    border: none;
+    border-radius: 2px;
+    box-shadow: none;
+    box-sizing: border-box;
+    color: #e5e5e5;
+    font-size: 14px;
+    height: 40px;
+    width: 100%;
+    padding: 0 16px 0 32px;
+    text-shadow: none;
+    transition: all .3s;
+}
+
+#main {
+    padding-left: 0;
+}
+
+.side-menu{
+    width: 100%;
+    max-width: 200px;
+    min-width: 100px;
+    padding:0;
+    margin:0;
+    float: left;
+    min-height: 500px;
+}
+
+.side-menu ul{
+    list-style-type: none;
+    padding:0;
+    margin:0;
+    border:0;
+    float:left;
+    width: 100%;
+    background-color: #efefef;
+}
+
+.side-menu li{
+    margin:0;
+    padding:0;
+    border:0;
+
+}
+
+.side-menu-item a{
+    cursor: pointer;
+    float:left;
+    margin:0;
+    padding:13px 10px;
+    text-decoration:none;
+    border:1px solid #dddddd;
+    border-bottom: 0;
+    width: 100%;
+}
+
+.side-menu-item:last-child a{
+    border-bottom: 1px solid #dddddd;
+}
+
+.side-menu-item a:hover{
+    background-color: #ddd;
+    border-left: 3px solid #676767;
+}
+
+@media (min-width: 1200px) {
+    .navbar .navbar-search{
+        width: 900px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .navbar .navbar-search{
+        width: 700px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .navbar .navbar-search{
+        width: 500px;
+    }
+}
+
+@media (max-width: 767px) {
+    .navbar .navbar-search{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+}

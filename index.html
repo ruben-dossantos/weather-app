@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ruben's Weather</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/weather-icons.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+</head>
+<body ng-app="weather" ng-strict-di>
+
+<header>
+    <nav id="header-nav" class="navbar navbar-default">
+        <div class="container-fluid">
+
+            <div class="navbar-header">
+
+                <div class="navbar-brand">
+                    <a href="index.html">
+                        <h1 id="page-header">Ruben's Weather</h1>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="collapse navbar-collapse">
+
+                <form class="navbar-form navbar-left navbar-search" ng-submit="submit()">
+                    <!--<i class="glyphicon glyphicon-search search-icon"></i>-->
+                    <input type="text" name="place_q" class="search-query" placeholder="SEARCH"
+                           autocomplete="off">
+
+                </form>
+
+            </div>
+
+            <div class="visible-xs">
+                <form id="navbar-search-sm" class="navbar-search" ng-submit="submit()">
+                    <!--<i class="glyphicon glyphicon-search search-icon"></i>-->
+                    <input type="text" name="place_q" class="search-query" placeholder="SEARCH"
+                           autocomplete="off">
+
+                </form>
+            </div>
+
+
+
+        </div>
+    </nav>
+</header>
+
+
+
+
+<div id="main" class="container-fluid">
+    <div class="row">
+        <div class="col-sm-2 hidden-xs">
+
+            <div class="side-menu">
+                <ul>
+                    <li class="side-menu-item"><a href="#">Porto</a></li>
+                    <li class="side-menu-item"><a href="#">Tokyo</a></li>
+                    <li class="side-menu-item"><a href="#">London</a></li>
+                    <li class="side-menu-item"><a href="#">New York</a></li>
+                    <li class="side-menu-item"><a href="#">Los Angels</a></li>
+                    <li class="side-menu-item"><a href="#">St. Petersburg</a></li>
+                    <li class="side-menu-item"><a href="#">Cairo</a></li>
+                    <li class="side-menu-item"><a href="#">Sidney</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+
+        <div class="col-sm-8">
+            CONTEUDO CONTEDUO
+            <!--<ui-view></ui-view>-->
+        </div>
+    </div>
+</div>
+
+<footer class="panel-footer">
+    <div class="container-fluid">
+        <div class="row">
+            CENAS CENAS
+        </div>
+    </div>
+</footer>
+
+<!-- Libs -->
+<script src="lib/jquery-2.2.4.min.js"></script>
+<script src="lib/bootstrap.min.js"></script>
+<script src="lib/angular.min.js"></script>
+<script src="lib/angular-ui-router.min.js"></script>
+
+<!-- Weather Main -->
+<script src="src/weather.module.js"></script>
+
+</body>
+</html>
