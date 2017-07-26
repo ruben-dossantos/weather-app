@@ -91,24 +91,115 @@ body {
     border-left: 3px solid #676767;
 }
 
+.component {
+
+}
+
+.weather-square-lg {
+    position: relative;
+    margin: 50px auto; /* center square */
+    width: 250px;
+    height: 250px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    background-color: #FFF;
+}
+
+.weather-square-lg:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    transform: scale(1.05);
+}
+
+.weather-image-lg {
+    position:absolute;
+    width: 100%;
+    font-size: 10em;
+    text-align: center;
+    color: yellow;
+}
+
+.weather-date {
+    position:absolute;
+    right: 0;
+    font-size: 1.3em;
+}
+
+.weather-min-temperature, .weather-actual-temperature, .weather-max-temperature {
+    position: absolute;
+    bottom: 0;
+    font-size: 1.2em;
+}
+
+.weather-min-temperature {
+    left: 0;
+    text-shadow: 1px 1px 1px #0055FF;
+}
+
+.weather-actual-temperature {
+    right: 0;
+    width: 100%;
+    text-align: center;
+    text-shadow: 1px 1px 1px #555;
+}
+
+.weather-max-temperature {
+    right: 0;
+    text-shadow: 1px 1px 1px #FF2200;
+}
+
+.weather-info {
+    background-color: #fff;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    height: 250px;
+    margin: 50px;
+    padding: 75px;
+}
+
+.weather-square-md {
+    position: relative;
+    margin: 50px auto; /* center square */
+    width: 150px;
+    height: 150px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    background-color: #FFF;
+    cursor: pointer;
+}
+
+.weather-square-md:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    transform: scale(1.05);
+}
+
+.weather-image-md {
+    position:absolute;
+    margin: 15px;
+    width: 125px;
+    height: 125px;
+    font-size: 4.5em;
+    text-align: center;
+    color: blue;
+}
+
+/* large screens */
 @media (min-width: 1200px) {
     .navbar .navbar-search{
         width: 900px;
     }
 }
-
+/* medium screens */
 @media (min-width: 992px) and (max-width: 1199px) {
     .navbar .navbar-search{
         width: 700px;
     }
 }
-
+/* small screens */
 @media (min-width: 768px) and (max-width: 991px) {
     .navbar .navbar-search{
         width: 500px;
     }
 }
-
+/* extra small screens */
 @media (max-width: 767px) {
     .navbar .navbar-search{
         width: 100%;
