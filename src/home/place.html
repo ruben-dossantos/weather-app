@@ -1,0 +1,15 @@
+<div class="row">
+    <header-info city="placeCtrl.cityInfo"></header-info>
+</div>
+
+
+
+<div class="row">
+    <today-info weather="placeCtrl.weatherToday"></today-info>
+</div>
+
+<hr>
+
+<div class="row">
+    <forecast-info ng-repeat="item in placeCtrl.forecast" weather="item"></forecast-info>
+</div>

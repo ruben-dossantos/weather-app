@@ -1,0 +1,21 @@
+<div class="col-lg-3 col-md-5">
+    <div class="weather-square-lg">
+        <div class="weather-image-lg"><i class="wi wi-day-sunny"></i></div>
+        <span class="weather-date">{{$ctrl.weather.date | date : "dd/MM" }}</span>
+        <span class="weather-min-temperature">{{$ctrl.weather.min | convertTemperature : 'C' : true}} ºC</span>
+        <span class="weather-actual-temperature">{{$ctrl.weather.temp | convertTemperature : 'C' : false}} ºC</span>
+        <span class="weather-max-temperature">{{$ctrl.weather.max | convertTemperature : 'C' : true}} ºC</span>
+
+    </div>
+</div>
+<div class="col-lg-9 col-md-7">
+    <div class="weather-info">
+        <ul>
+            <li><span>Wind: </span> {{$ctrl.weather.wind}} m/s</li>
+            <li><span>Humidity: </span> {{$ctrl.weather.humidity}}%</li>
+            <li><span>Rain: </span> {{$ctrl.weather.rain}}%</li>
+        </ul>
+
+
+    </div>
+</div>

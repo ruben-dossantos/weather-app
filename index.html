@@ -54,117 +54,7 @@
 </header>
 
 
-
-
-<div id="main" class="container-fluid">
-    <div class="row">
-        <div class="col-sm-2 hidden-xs">
-
-            <div class="side-menu">
-                <ul>
-                    <li class="side-menu-item"><a href="#">Porto</a></li>
-                    <li class="side-menu-item"><a href="#">Tokyo</a></li>
-                    <li class="side-menu-item"><a href="#">London</a></li>
-                    <li class="side-menu-item"><a href="#">New York</a></li>
-                    <li class="side-menu-item"><a href="#">Los Angels</a></li>
-                    <li class="side-menu-item"><a href="#">St. Petersburg</a></li>
-                    <li class="side-menu-item"><a href="#">Cairo</a></li>
-                    <li class="side-menu-item"><a href="#">Sidney</a></li>
-                </ul>
-            </div>
-
-        </div>
-
-
-        <div class="col-sm-8">
-
-            <div class="row">
-                <div class="col-xs-12">
-                    <div id="location-header">
-                        <h2>Paços de Ferreira, PT</h2>
-                        <h3>Sky is Clear Today</h3>
-                    </div>
-                </div>
-            </div>
-
-
-
-            <div class="row">
-                <div class="col-lg-3 col-md-5">
-                    <div class="weather-square-lg">
-                        <div class="weather-image-lg"><i class="wi wi-day-sunny"></i></div>
-                        <span class="weather-date">26/07</span>
-                        <span class="weather-min-temperature">21 ºC</span>
-                        <span class="weather-actual-temperature">22.4 ºC</span>
-                        <span class="weather-max-temperature">25 ºC</span>
-
-                    </div>
-                </div>
-                <div class="col-lg-9 col-md-7">
-                    <div class="weather-info">
-                        <ul>
-                            <li><span>Wind: </span> 8km/h</li>
-                            <li><span>Humidity: </span> 34%</li>
-                            <li><span>Rain: </span> 0%</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <!--<ui-view></ui-view>-->
-
-            <hr>
-
-            <div class="row">
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                    <div class="weather-square-md">
-                        <div class="weather-image-md"><i class="wi wi-day-rain"></i></div>
-                        <span class="weather-date">27/07</span>
-                        <span class="weather-min-temperature">13 ºC</span>
-
-                        <span class="weather-max-temperature">19 ºC</span>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                    <div class="weather-square-md">
-                        <div class="weather-image-md"><i class="wi wi-day-rain"></i></div>
-                        <span class="weather-date">27/07</span>
-                        <span class="weather-min-temperature">13 ºC</span>
-
-                        <span class="weather-max-temperature">19 ºC</span>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                    <div class="weather-square-md">
-                        <div class="weather-image-md"><i class="wi wi-day-rain"></i></div>
-                        <span class="weather-date">27/07</span>
-                        <span class="weather-min-temperature">13 ºC</span>
-
-                        <span class="weather-max-temperature">19 ºC</span>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                    <div class="weather-square-md">
-                        <div class="weather-image-md"><i class="wi wi-day-rain"></i></div>
-                        <span class="weather-date">27/07</span>
-                        <span class="weather-min-temperature">13 ºC</span>
-
-                        <span class="weather-max-temperature">19 ºC</span>
-                    </div>
-                </div>
-                <div class="col-lg-3 cold-md-4 col-sm-6 col-xs-12">
-                    <div class="weather-square-md">
-                        <div class="weather-image-md"><i class="wi wi-day-rain"></i></div>
-                        <span class="weather-date">27/07</span>
-                        <span class="weather-min-temperature">13 ºC</span>
-
-                        <span class="weather-max-temperature">19 ºC</span>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</div>
+<ui-view></ui-view>
 
 <footer class="panel-footer">
     <div class="container-fluid">
@@ -182,6 +72,20 @@
 
 <!-- Weather Main -->
 <script src="src/weather.module.js"></script>
+
+<!-- Utils -->
+<script src="src/utils/weather.service.js"></script>
+<script src="src/utils/capitalize.filter.js"></script>
+<script src="src/utils/convertTemperature.filter.js"></script>
+
+<!-- Home -->
+<script src="src/home/side-menu/side-menu.component.js"></script>
+
+<!-- Place -->
+<script src="src/home/place.controller.js"></script>
+<script src="src/home/header-info/header-info.component.js"></script>
+<script src="src/home/today-info/today-info.component.js"></script>
+<script src="src/home/forecast-info/forecast-info.component.js"></script>
 
 </body>
 </html>
