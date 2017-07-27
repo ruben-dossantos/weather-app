@@ -14,6 +14,7 @@ hr {
     padding: 0;
 }
 
+/* Nav Bar */
 .navbar-default {
     background-color: #1f384d;
 }
@@ -66,6 +67,7 @@ hr {
     padding-left: 0;
 }
 
+/* Side Menu */
 .side-menu{
     width: 100%;
     padding:0;
@@ -112,6 +114,7 @@ hr {
     border-left: 3px solid #676767;
 }
 
+/* Place Info */
 #location-header {
     color: #1f384d;
     background-color: #fff;
@@ -120,6 +123,7 @@ hr {
     padding: 5px 15px 20px;
 }
 
+/* Today's Weather */
 .weather-square-lg {
     /* margin: 50px auto; center square */
     position: relative;
@@ -198,6 +202,7 @@ hr {
     line-height: 60px;
 }
 
+/* Forecast */
 .weather-square-md {
     position: relative;
     margin-bottom: 50px;
@@ -241,6 +246,15 @@ hr {
 .panel-footer p.footer-content span {
     font-size: 0.9em;
     color: #aaa;
+}
+
+/* Loading Bar */
+#loading-bar .bar {
+    background: #fff;
+}
+#loading-bar-spinner .spinner-icon {
+    border-top-color:#fff;
+    border-left-color:#fff;
 }
 
 /* large screens */

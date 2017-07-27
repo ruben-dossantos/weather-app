@@ -1,6 +1,6 @@
 (function() {
     'use strict';
-    angular.module('weather', ['ui.router'])
+    angular.module('weather', ['ui.router', 'angular-loading-bar'])
         .constant('ApiPath', 'http://api.openweathermap.org/data/2.5/')
         .constant('ApiKey', '56bad1ca5198fd8c195319a824fa7ae2')
         .config(config);
