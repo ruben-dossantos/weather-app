@@ -1,6 +1,6 @@
 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-    <div class="weather-square-md">
-        <div class="weather-image-md"><i class="wi wi-day-rain"></i></div>
+    <div class="weather-square-md  {{$ctrl.weather.state}}">
+        <div class="weather-image-md"></div>
         <span class="weather-date">{{$ctrl.weather.date | date : "dd/MM" }}</span>
         <span class="weather-min-temperature">{{$ctrl.weather.min | convertTemperature : 'C' : true}} ºC</span>
 

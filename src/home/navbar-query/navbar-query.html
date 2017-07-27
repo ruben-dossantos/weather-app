@@ -1,0 +1,45 @@
+<nav id="header-nav" class="navbar navbar-default">
+    <div class="container-fluid">
+
+        <div class="navbar-header">
+
+            <div class="navbar-brand">
+                <a href="index.html">
+                    <h1 id="page-header">Ruben's Weather</h1>
+                </a>
+            </div>
+
+        </div>
+
+        <div class="collapse navbar-collapse">
+
+            <form class="navbar-form navbar-left navbar-search" novalidate name="placeQuery">
+                <div class="input-group">
+                    <input type="text" name="place" class="search-query form-control" placeholder="SEARCH" ng-model="$ctrl.place"
+                           autocomplete="off">
+
+                    <div class="input-group-btn">
+                        <button class="btn btn-default btn-weather" ng-click="$ctrl.submit()"><i class="glyphicon glyphicon-search search-icon"></i></button>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+
+        <div class="visible-xs">
+            <form class="navbar-form navbar-left navbar-search" novalidate name="placeQuery">
+                <div class="input-group">
+                    <input type="text" name="place" class="search-query form-control" placeholder="SEARCH" ng-model="$ctrl.place"
+                           autocomplete="off">
+
+                    <div class="input-group-btn">
+                        <button class="btn btn-default btn-weather" ng-click="$ctrl.submit()"><i class="glyphicon glyphicon-search search-icon"></i></button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+
+
+    </div>
+</nav>

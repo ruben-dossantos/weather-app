@@ -7,61 +7,21 @@
     <title>Ruben's Weather</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/weather-icons.min.css">
+    <link rel="stylesheet" href="css/weather.css">
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 </head>
 <body ng-app="weather" ng-strict-di>
 
 <header>
-    <nav id="header-nav" class="navbar navbar-default">
-        <div class="container-fluid">
-
-            <div class="navbar-header">
-
-                <div class="navbar-brand">
-                    <a href="index.html">
-                        <h1 id="page-header">Ruben's Weather</h1>
-                    </a>
-                </div>
-
-            </div>
-
-            <div class="collapse navbar-collapse">
-
-                <form class="navbar-form navbar-left navbar-search" ng-submit="submit()">
-                    <!--<i class="glyphicon glyphicon-search search-icon"></i>-->
-                    <input type="text" name="place_q" class="search-query" placeholder="SEARCH"
-                           autocomplete="off">
-
-                </form>
-
-            </div>
-
-            <div class="visible-xs">
-                <form id="navbar-search-sm" class="navbar-search" ng-submit="submit()">
-                    <!--<i class="glyphicon glyphicon-search search-icon"></i>-->
-                    <input type="text" name="place_q" class="search-query" placeholder="SEARCH"
-                           autocomplete="off">
-
-                </form>
-            </div>
-
-
-
-        </div>
-    </nav>
+    <navbar-query></navbar-query>
 </header>
 
 
 <ui-view></ui-view>
 
 <footer class="panel-footer">
-    <div class="container-fluid">
-        <div class="row">
-            CENAS CENAS
-        </div>
-    </div>
+    <footer-info></footer-info>
 </footer>
 
 <!-- Libs -->
@@ -78,14 +38,21 @@
 <script src="src/utils/capitalize.filter.js"></script>
 <script src="src/utils/convertTemperature.filter.js"></script>
 
+<!-- Navbar -->
+<script src="src/home/navbar-query/navbar-query.component.js"></script>
+
 <!-- Home -->
+<script src="src/home/home.controller.js"></script>
 <script src="src/home/side-menu/side-menu.component.js"></script>
 
 <!-- Place -->
-<script src="src/home/place.controller.js"></script>
+<script src="src/home/place/place.controller.js"></script>
 <script src="src/home/header-info/header-info.component.js"></script>
 <script src="src/home/today-info/today-info.component.js"></script>
 <script src="src/home/forecast-info/forecast-info.component.js"></script>
+
+<!-- Footer -->
+<script src="src/home/footer-info/footer-info.component.js"></script>
 
 </body>
 </html>

@@ -11,11 +11,13 @@
         $stateProvider
             .state('home', {
                 url: '/',
-                templateUrl: 'src/home/home.html'
+                templateUrl: 'src/home/home.html',
+                controller: 'HomeController',
+                controllerAs: 'homeCtrl'
             })
             .state('home.place', {
                 url: 'place/{place}',
-                templateUrl: 'src/home/place.html',
+                templateUrl: 'src/home/place/place.html',
                 controller: 'PlaceController',
                 controllerAs: 'placeCtrl',
                 resolve: {

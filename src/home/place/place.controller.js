@@ -8,6 +8,38 @@
     function PlaceController(placeWeather, placeForecast) {
         var placeCtrl = this;
 
+        var getImageText = function (icon) {
+            var stateClass = 'weather-';
+            switch(icon){
+                case '03d' :
+                case '03n' :
+                case '04d' :
+                case '04n' :
+                    return stateClass + 'cloud';
+                case '50d' :
+                case '50n' :
+                    return stateClass + 'mist';
+                case '09d' :
+                case '09n' :
+                    return stateClass + 'rain';
+                case '13d' :
+                case '13n' :
+                    return stateClass + 'snow';
+                case '01d' :
+                case '01n':
+                    return stateClass + 'sun';
+                case '02d' :
+                case '02n' :
+                    return stateClass + 'sun-cloud';
+                case '10d' :
+                case '10n' :
+                    return stateClass + 'sun-rain';
+                case '11d' :
+                case '11n' :
+                    return stateClass + 'thunder-rain';
+            }
+        };
+
         if (placeWeather) {
             placeCtrl.cityInfo = {
                 'name': placeWeather.name,
@@ -21,7 +53,7 @@
                 'temp': placeWeather.main.temp,
                 'max': placeForecast.list[0].temp.max,
                 'humidity': placeWeather.main.humidity,
-                'state': placeWeather.weather[0].main
+                'state': getImageText(placeWeather.weather[0].icon)
             };
             placeCtrl.weatherToday.wind = (placeWeather.wind) ? placeWeather.wind.speed : 0;
             placeCtrl.weatherToday.rain = (placeWeather.rain) ? placeWeather.rain['3h'] : 0;
@@ -36,7 +68,7 @@
                     'date': item.dt * 1000,
                     'min': item.temp.min,
                     'max': item.temp.max,
-                    'state': item.weather[0].main
+                    'state': getImageText(item.weather[0].icon)
                 };
                 placeCtrl.forecast.push(temp);
             }

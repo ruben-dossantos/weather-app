@@ -1,0 +1,40 @@
+.weather-cloud {
+    background: #fff url("../images/cloud.png") no-repeat center;
+    background-size: 100%;
+}
+.weather-mist {
+    background: #fff url("../images/mist.png") no-repeat center;
+    background-size: 100%;
+}
+.weather-rain {
+    background: #fff url("../images/rain.png") no-repeat center;
+    background-size: 100%;
+}
+.weather-snow {
+    background: #fff url("../images/snow.png") no-repeat center;
+    background-size: 100%;
+}
+.weather-snow-rain {
+    background: #fff url("../images/snow-rain.png") no-repeat center;
+    background-size: 100%;
+}
+.weather-sun {
+    background: #fff url("../images/sun.png") no-repeat center;
+    background-size: 100%;
+}
+.weather-sun-cloud {
+    background: #fff url("../images/sun-cloud.png") no-repeat center;
+    background-size: 100%;
+}
+.weather-sun-rain {
+    background: #fff url("../images/sun-rain.png") no-repeat center;
+    background-size: 100%;
+}
+.weather-thunder {
+    background: #fff url("../images/thunder.png") no-repeat center;
+    background-size: 100%;
+}
+.weather-thunder-rain {
+    background: #fff url("../images/thunder-rain.png") no-repeat center;
+    background-size: 100%;
+}
